@@ -95,3 +95,27 @@ const createPlayer = function(symbol) {
     
     return { getScore, setScore, getSymbol, setSymbol }
 }
+
+const screenController = (function() {
+    
+    function render(playerOne, playerTwo, gameBoard) {
+        
+    }
+
+    return { render }
+})();
+
+const gameController = (function() {
+    let playerOne = createPlayer("X");
+    let playerTwo = createPlayer("O");
+
+
+    
+    function start() {
+        
+    }
+
+    return { start }
+})();
+
+gameController.start();
