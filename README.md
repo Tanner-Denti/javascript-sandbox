@@ -1,3 +1,5 @@
 # JavaScript Sandbox
 This is a sandbox environment where I practice vanilla JavaScript 
-concepts. Topics are generally labeled by directory.
+concepts. The pages I create from my practice are linked below.
+
+[factory-module-patterns/tictactoe](https://tanner-denti.github.io/javascript-sandbox/factory-module-patterns/)
