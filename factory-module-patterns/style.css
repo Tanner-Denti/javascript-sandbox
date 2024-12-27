@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --font-family: "Manrope", seriff;
+    --font-optical-sizing: auto;
+    --font-weight: 400;
+    --font-style: normal;
+    --font-size: 25px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: #F7F7F7;
+}
+
+body {
+    font-family: var(--font-family);
+    font-optical-sizing: var(--font-optical-sizing);
+    font-weight: var(--font-weight);
+    font-style: var(--font-style);
+    font-size: var(--font-size);
+    color: #404040;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    padding: 15px 0px 15px 0px;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.player {
+    padding: 0px 50px 10px 50px;
+}
+
+.desc,
+.score-div {
+    display: flex;
+}
+
+.symbol,
+.score {
+    margin-left: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #E6E6E6;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #404040;
+    color: #E6E6E6;
+    cursor: pointer;
+}
+
+input {
+    width: 39px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #E6E6E6;
+}
+
+input:focus {
+    outline: none;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+}
+
+.board-cell {
+    border: 1px solid #404040;
+    background-color: #E6E6E6;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 75px;
+}
+
+.board-cell:hover {
+    background-color: #CFCFCF;
+    color: #404040;
+    cursor: pointer;
+}
+
+.play-again-btn {
+    grid-column: 2/3;
+    margin-top: 25px;
+    padding: 10px 0px 10px 0px;
+}
+

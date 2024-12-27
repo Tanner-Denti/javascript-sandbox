@@ -9,6 +9,54 @@
   </head>
 
   <body>
+    <header><h1>Tic Tac Toe</h1></header>
+
+    <main>
+      <div class="player player-one">
+        <h2>Player One</h2>
+        <div class="desc">
+          <p>Symbol: </p><p class="symbol player-one-symbol">X</p>
+        </div>
+        <div class="score-div">
+          <p>Score: </p><p class="score player-one-score">0</p>
+        </div>
+        <button class="sym1-btn">Change Symbol</button>
+        <form class="player-one-form hidden" action="" method="post">
+          <label for="new-p1-symbol"></label>
+          <input id="new-p1-symbol" type="text" name="new-p1-symbol" maxlength="1">
+          <button class="p1-submit">Submit</button>
+        </form>
+      </div>
+      <div class="game-board">
+          <div class="board-cell"></div>
+          <div class="board-cell"></div>
+          <div class="board-cell"></div>
+          <div class="board-cell"></div>
+          <div class="board-cell"></div>
+          <div class="board-cell"></div>
+          <div class="board-cell"></div>
+          <div class="board-cell"></div>
+          <div class="board-cell"></div>
+      </div>
+
+      <div class="player player-two">
+        <h2>Player Two</h2>
+        <div class="desc">
+          <p>Symbol: </p><p class="symbol player-two-symbol">O</p>
+        </div>
+        <div class="score-div">
+          <p>Score: </p><p class="score player-two-score">0</p>
+        </div>
+        <button class="sym2-btn">Change Symbol</button>
+        <form class="player-two-form hidden" action="" method="post">
+          <label for="new-p2-symbol"></label>
+          <input id="new-p2-symbol" type="text" name="new-p2-symbol" maxlength="1">
+          <button class="p2-submit">Submit</button>
+        </form>
+      </div>
+
+      <button class="play-again-btn hidden">Play Again</button>
+    </main>
 
   </body>
 </html>
