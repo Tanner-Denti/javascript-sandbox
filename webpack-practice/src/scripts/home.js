@@ -1,9 +1,7 @@
-import "../styles.css";
 import restaurantImg from "../images/restaurant.jpg";
 
-export default function() {
-    const content = document.getElementById("content");
 
+export default function(content) {
     const title = document.createElement("h1");
     title.innerText = "Pizza Pie Guy!";
 
