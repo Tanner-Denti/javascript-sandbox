@@ -1,2 +1,3 @@
+import initialLoad from "./scripts/initialLoad.js";
 
-console.log("Hello world");
+initialLoad();
