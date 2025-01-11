@@ -21,12 +21,13 @@ export const projectFactory = function(name) {
 
     function getTodos() { return _todos.map( todo => ({...todo})); }
     function addTodo(todo) { _todos.push(todo); } 
-    function removeTodo() {}
+    function removeTodo(index) { _todos.splice(index, 1); }
 
     return {
         getName,
         setName,
         getTodos,
         addTodo,
+        removeTodo,
     };
 };
