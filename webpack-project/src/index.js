@@ -1,4 +1,4 @@
 import { view } from "./scripts/view.js";
 
 
-document.addEventListener('DOMContentLoaded', view.loadHomepage);
+document.addEventListener('DOMContentLoaded', view.initHomepage);

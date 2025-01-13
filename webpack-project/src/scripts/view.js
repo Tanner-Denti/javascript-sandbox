@@ -1,9 +1,14 @@
+import { header } from "./ui/header.js";
+import { mainContent } from "./ui/mainContent.js";
 
 
 export const view = (function() {
-    function loadHomepage() {
+    const body = document.body;
 
+    function initHomepage() {
+        body.appendChild(header);
+        body.appendChild(mainContent);
     }
 
-    return { loadHomepage };
+    return { initHomepage };
 })(); 
