@@ -1,0 +1,12 @@
+
+
+main {
+    display: flex;
+}
+
+.todo-column-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+

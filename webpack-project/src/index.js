@@ -1,3 +1,4 @@
+import "./style.css";
 import { view } from "./scripts/view.js";
 
 

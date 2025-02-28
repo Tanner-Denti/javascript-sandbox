@@ -1,4 +1,4 @@
-
+import "../../styles/todoCard.css";
 
 
 export const todoCard = function(title, dueDate, description) {

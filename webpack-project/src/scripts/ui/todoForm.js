@@ -1,3 +1,4 @@
+import "../../styles/todoForm.css";
 
 
 export const todoForm = (function() {
@@ -11,6 +12,7 @@ export const todoForm = (function() {
     rightFields.classList.add("right-form-fields");
 
     const titleDiv = document.createElement("div");
+    titleDiv.classList.add("title-div");
     const titleLabel = document.createElement("label");
     titleLabel.setAttribute("for", "title-input");
     const titleInput = document.createElement("input");
@@ -22,12 +24,13 @@ export const todoForm = (function() {
     leftFields.appendChild(titleDiv);
 
     const descriptionDiv = document.createElement("div");
+    descriptionDiv.classList.add("description-div");
     const descriptionLabel = document.createElement("label");
     descriptionLabel.setAttribute("for", "description-input");
     const descriptionInput = document.createElement("input");
     descriptionInput.setAttribute("id", "description-input");
     descriptionInput.setAttribute("type", "textarea");
-    descriptionInput.setAttribute("value", "Title");
+    descriptionInput.setAttribute("value", "Description");
     descriptionDiv.appendChild(descriptionLabel);
     descriptionDiv.appendChild(descriptionInput);
     leftFields.appendChild(descriptionDiv);

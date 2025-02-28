@@ -1,3 +1,4 @@
+import "../../styles/sidebar.css";
 import { controller } from "../controller.js";
 
 

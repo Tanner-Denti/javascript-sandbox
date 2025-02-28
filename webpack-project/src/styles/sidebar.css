@@ -1,0 +1,19 @@
+
+.sidebar {
+    padding: 20px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar nav a {
+    margin: 10px;
+}
+
+.sidebar button {
+    margin: 10px;
+}
+
+

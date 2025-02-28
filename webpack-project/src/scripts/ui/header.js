@@ -1,4 +1,4 @@
-
+import "../../styles/header.css";
 
 export const header = (function() {
     const headerDOM = document.createElement("header");
