@@ -1,6 +1,8 @@
 
 .sidebar {
     padding: 20px;
+    background-color: #D9D9D9;
+    width: 240px;
 }
 
 .sidebar nav {
@@ -9,11 +11,11 @@
 }
 
 .sidebar nav a {
-    margin: 10px;
+    margin: 10px 10px 20px 30px;
 }
 
 .sidebar button {
-    margin: 10px;
+    margin: 10px 10px 20px 30px;
 }
 
 
