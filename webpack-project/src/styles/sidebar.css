@@ -10,12 +10,30 @@
     flex-direction: column;
 }
 
+.project-link-div {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.project-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.add-project-div {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
 .sidebar nav a {
-    margin: 10px 10px 20px 30px;
+    margin: 15px 10px 15px 15px;
 }
 
 .sidebar button {
-    margin: 10px 10px 20px 30px;
+    margin: 15px 10px 15px 15px;
+    width: 120px;
 }
 
 
