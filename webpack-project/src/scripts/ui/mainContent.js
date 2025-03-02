@@ -5,13 +5,13 @@ import { todoForm } from "./todoForm";
 
 export const mainContent = (function() {
     const mainContentDOM = document.createElement("main");
-    const todoColumnDOM = document.createElement("div")
+    const _todoColumnDOM = document.createElement("div")
 
-    todoColumnDOM.classList.add("todo-column-container");
-    todoColumnDOM.appendChild(todoForm);
+    _todoColumnDOM.classList.add("todo-column-container");
+    _todoColumnDOM.appendChild(todoForm);
 
     mainContentDOM.appendChild(sidebar);
-    mainContentDOM.appendChild(todoColumnDOM);
+    mainContentDOM.appendChild(_todoColumnDOM);
 
     return mainContentDOM;
 })();

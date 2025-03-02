@@ -2,7 +2,7 @@
 .sidebar {
     padding: 20px;
     background-color: #D9D9D9;
-    width: 240px;
+    width: 330px;
 }
 
 .sidebar nav {
@@ -13,27 +13,35 @@
 .project-link-div {
     display: flex;
     align-items: center;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .project-icon {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 
 .add-project-div {
     display: flex;
-    align-items: center;
-    margin-left: 15px;
+    align-items: start;
+    margin: 15px 15px 15px 20px;
+}
+
+.add-project-icon {
+    margin-top: 8px;
 }
 
 .sidebar nav a {
     margin: 15px 10px 15px 15px;
 }
 
-.sidebar button {
-    margin: 15px 10px 15px 15px;
-    width: 120px;
+.new-p {
+    padding-left: 15px;
 }
 
+.project-icon:hover,
+.sidebar nav a:hover,
+.new-p:hover {
+    cursor: pointer;
+}
 

@@ -1,108 +1,110 @@
 import "../../styles/todoForm.css";
 
+
+function _handleTodoFormSubmit(event) {
+    event.preventDefault();
+    console.log("todoFormSubmit");
+}
+
 export const todoForm = (function() {
     const todoFormDOM = document.createElement("form");
+    todoFormDOM.classList.add("todo-form");
     todoFormDOM.setAttribute("method", "post");
     todoFormDOM.setAttribute("action", "");
 
-    const leftFields = document.createElement("div");
-    leftFields.classList.add("left-form-fields");
+    const _leftFields = document.createElement("div");
+    _leftFields.classList.add("left-form-fields");
 
-    const rightFields = document.createElement("div");
-    rightFields.classList.add("right-form-fields");
+    const _rightFields = document.createElement("div");
+    _rightFields.classList.add("right-form-fields");
 
     // Title
-    const titleDiv = document.createElement("div");
-    titleDiv.classList.add("title-div");
+    const _titleDiv = document.createElement("div");
+    _titleDiv.classList.add("title-div");
 
-    const titleLabel = document.createElement("label");
-    titleLabel.setAttribute("for", "title-input");
+    const _titleLabel = document.createElement("label");
+    _titleLabel.setAttribute("for", "title-input");
 
-    const titleInput = document.createElement("input");
-    titleInput.setAttribute("id", "title-input");
-    titleInput.setAttribute("type", "text");
-    titleInput.setAttribute("placeholder", "Title");
-    titleInput.maxLength = 40;
+    const _titleInput = document.createElement("input");
+    _titleInput.setAttribute("id", "title-input");
+    _titleInput.setAttribute("type", "text");
+    _titleInput.setAttribute("placeholder", "Title");
+    _titleInput.maxLength = 40;
 
-    titleDiv.appendChild(titleLabel);
-    titleDiv.appendChild(titleInput);
-    leftFields.appendChild(titleDiv);
+    _titleDiv.appendChild(_titleLabel);
+    _titleDiv.appendChild(_titleInput);
+    _leftFields.appendChild(_titleDiv);
 
     // Description
-    const descriptionDiv = document.createElement("div");
-    descriptionDiv.classList.add("description-div");
+    const _descriptionDiv = document.createElement("div");
+    _descriptionDiv.classList.add("description-div");
 
-    const descriptionLabel = document.createElement("label");
-    descriptionLabel.setAttribute("for", "description-input");
+    const _descriptionLabel = document.createElement("label");
+    _descriptionLabel.setAttribute("for", "description-input");
 
-    const descriptionInput = document.createElement("textarea");
-    descriptionInput.setAttribute("id", "description-input");
-    descriptionInput.setAttribute("placeholder", "Description");
-    descriptionInput.style.resize = "none";
+    const _descriptionInput = document.createElement("textarea");
+    _descriptionInput.setAttribute("id", "description-input");
+    _descriptionInput.setAttribute("placeholder", "Description");
+    _descriptionInput.style.resize = "none";
 
-    descriptionDiv.appendChild(descriptionLabel);
-    descriptionDiv.appendChild(descriptionInput);
-    leftFields.appendChild(descriptionDiv);
+    _descriptionDiv.appendChild(_descriptionLabel);
+    _descriptionDiv.appendChild(_descriptionInput);
+    _leftFields.appendChild(_descriptionDiv);
 
     // Date
-    const dueDateDiv = document.createElement("div");
+    const _dueDateDiv = document.createElement("div");
 
-    const dueDateInput = document.createElement("input");
-    dueDateInput.classList.add("due-date");
-    dueDateInput.setAttribute("id", "due-date-input");
-    dueDateInput.setAttribute("type", "date");
-    dueDateInput.valueAsDate = new Date();
+    const _dueDateInput = document.createElement("input");
+    _dueDateInput.classList.add("due-date");
+    _dueDateInput.setAttribute("id", "due-date-input");
+    _dueDateInput.setAttribute("type", "date");
+    _dueDateInput.valueAsDate = new Date();
 
-    const dueDateLabel = document.createElement("label");
-    dueDateLabel.setAttribute("for", "due-date-input");
+    const _dueDateLabel = document.createElement("label");
+    _dueDateLabel.setAttribute("for", "due-date-input");
 
-    dueDateDiv.appendChild(dueDateLabel);
-    dueDateDiv.appendChild(dueDateInput);
-    rightFields.appendChild(dueDateDiv);
+    _dueDateDiv.appendChild(_dueDateLabel);
+    _dueDateDiv.appendChild(_dueDateInput);
+    _rightFields.appendChild(_dueDateDiv);
 
     // Priority
-    const priorityDiv = document.createElement("div");
+    const _priorityDiv = document.createElement("div");
 
-    const priorityLabel = document.createElement("label");
-    priorityLabel.setAttribute("for", "priority-input");
+    const _priorityLabel = document.createElement("label");
+    _priorityLabel.setAttribute("for", "priority-input");
 
-    const prioritySelect = document.createElement("select");
-    prioritySelect.setAttribute("id", "priority-input");
+    const _prioritySelect = document.createElement("select");
+    _prioritySelect.setAttribute("id", "priority-input");
 
-    const placeHolderOption = document.createElement("option");
-    placeHolderOption.value = "";
-    placeHolderOption.textContent = "Priority";
-    placeHolderOption.selected = true;
-    placeHolderOption.disabled = true;
-    prioritySelect.appendChild(placeHolderOption);
+    const _placeHolderOption = document.createElement("option");
+    _placeHolderOption.value = "";
+    _placeHolderOption.textContent = "Priority";
+    _placeHolderOption.selected = true;
+    _placeHolderOption.disabled = true;
+    _prioritySelect.appendChild(_placeHolderOption);
 
-    const priorities = ["Low", "Medium", "High"];
-    priorities.forEach((priority) => {
+    const _priorities = ["Low", "Medium", "High"];
+    _priorities.forEach((priority) => {
         const option = document.createElement("option");
         option.value = priority;
         option.textContent = priority;
-        prioritySelect.appendChild(option);
+        _prioritySelect.appendChild(option);
     });
 
-    priorityDiv.appendChild(priorityLabel);
-    priorityDiv.appendChild(prioritySelect);
-    rightFields.appendChild(priorityDiv);
+    _priorityDiv.appendChild(_priorityLabel);
+    _priorityDiv.appendChild(_prioritySelect);
+    _rightFields.appendChild(_priorityDiv);
 
     // Create Button
-    const createBtn = document.createElement("button");
-    createBtn.setAttribute("type", "submit");
-    createBtn.textContent = "Create Todo";
-    rightFields.appendChild(createBtn);
+    const _createBtn = document.createElement("button");
+    _createBtn.setAttribute("type", "submit");
+    _createBtn.textContent = "Create Todo";
+    _rightFields.appendChild(_createBtn);
 
-    todoFormDOM.appendChild(leftFields);
-    todoFormDOM.appendChild(rightFields);
+    todoFormDOM.appendChild(_leftFields);
+    todoFormDOM.appendChild(_rightFields);
 
-    todoFormDOM.addEventListener("submit", handleTodoFormSubmit);
-
-    function handleTodoFormSubmit(event) {
-        event.preventDefault();
-        console.log("todoFormSubmit");
-    }
+    todoFormDOM.addEventListener("submit", _handleTodoFormSubmit);
 
     return todoFormDOM;
 })();

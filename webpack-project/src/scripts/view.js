@@ -3,11 +3,11 @@ import { mainContent } from "./ui/mainContent.js";
 
 
 export const view = (function() {
-    const body = document.body;
+    const _body = document.body;
 
     function initHomepage() {
-        body.appendChild(header);
-        body.appendChild(mainContent);
+        _body.appendChild(header);
+        _body.appendChild(mainContent);
     }
 
     return { initHomepage };

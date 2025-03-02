@@ -1,0 +1,52 @@
+
+
+.new-project-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.new-project-input {
+    width: 250px;
+    padding: 2px 0px 2px 10px;
+    background-color: #F4F4F4;
+}
+
+.new-project-input,
+.create-project-btn {
+    margin-left: 15px;
+    border-radius: 0px;
+    border: none;
+    font-family: var(--font-family);
+    font-optical-sizing: var(--font-optical-sizing);
+    font-weight: var(--font-weight);
+    font-style: var(--font-style);
+    font-size: 25px;
+    color: #404040;
+}
+
+.create-project-btn {
+    padding: 2px 0px;
+    margin-top: 2px;
+    background-color: #B4EBBC;
+}
+
+
+.new-project-input:focus,
+.create-project-btn:focus {
+    outline: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+.create-project-btn:hover {
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #404040;
+    opacity: 1;
+}
+
+.new-project-input:focus::placeholder {
+    opacity: 0;
+}

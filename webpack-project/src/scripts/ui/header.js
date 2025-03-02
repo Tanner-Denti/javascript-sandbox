@@ -4,15 +4,15 @@ import logoImg from "../../images/logo.png";
 export const header = (function() {
     const headerDOM = document.createElement("header");
 
-    const image = document.createElement("img");
-    image.src = logoImg;
-    image.alt = "Todo Logo";
+    const _image = document.createElement("img");
+    _image.src = logoImg;
+    _image.alt = "Todo Logo";
 
-    const h1 = document.createElement("h1");
-    h1.innerText = "Todo List";
+    const _h1 = document.createElement("h1");
+    _h1.innerText = "Todo List";
 
-    headerDOM.appendChild(image);
-    headerDOM.appendChild(h1);
+    headerDOM.appendChild(_image);
+    headerDOM.appendChild(_h1);
 
     return headerDOM; 
 })();

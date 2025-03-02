@@ -1,13 +1,14 @@
 
 
 main {
+    flex: 1 1 auto;
     display: flex;
 }
 
 .todo-column-container {
-    margin: auto;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    align-items: center;
+    flex: 1 1 auto;
 }
 
