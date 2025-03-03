@@ -2,7 +2,7 @@
 .sidebar {
     padding: 20px;
     background-color: #D9D9D9;
-    width: 330px;
+    width: 350px;
 }
 
 .sidebar nav {
@@ -13,7 +13,9 @@
 .project-link-div {
     display: flex;
     align-items: center;
-    margin-left: 20px;
+    margin: 0px 20px;
+    padding: 0px 10px;
+    border-radius: 5px;
 }
 
 .project-icon {
@@ -43,5 +45,10 @@
 .sidebar nav a:hover,
 .new-p:hover {
     cursor: pointer;
+}
+
+.project-link-div.active {
+    background-color: #E3E3E3;
+    font-weight: bold;
 }
 

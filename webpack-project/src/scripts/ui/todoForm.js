@@ -1,9 +1,32 @@
 import "../../styles/todoForm.css";
+import { controller } from "../controller.js";
 
 
 function _handleTodoFormSubmit(event) {
     event.preventDefault();
-    console.log("todoFormSubmit");
+    const titleInput = document.getElementById("title-input");
+    const descriptionInput = document.getElementById("description-input");
+    const dueDateInput = document.getElementById("due-date-input");
+    const priorityInput = document.getElementById("priority-input");
+
+    if (titleInput.value === "" ||
+        descriptionInput.value === "" ||
+        dueDateInput.value === "" ||
+        priorityInput.value === "Priority") {
+        return;
+    }
+
+    controller.addTodoToCurrentProject(
+        titleInput.value,
+        descriptionInput.value,
+        dueDateInput.value,
+        priorityInput.value
+    );
+
+    titleInput.value = "";
+    descriptionInput.value = "";
+    dueDateInput.value = "";
+    priorityInput.value = "";
 }
 
 export const todoForm = (function() {
