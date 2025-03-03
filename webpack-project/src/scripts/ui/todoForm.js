@@ -12,16 +12,21 @@ function _handleTodoFormSubmit(event) {
     if (titleInput.value === "" ||
         descriptionInput.value === "" ||
         dueDateInput.value === "" ||
-        priorityInput.value === "Priority") {
+        priorityInput.value === "") {
         return;
     }
 
-    controller.addTodoToCurrentProject(
-        titleInput.value,
-        descriptionInput.value,
-        dueDateInput.value,
-        priorityInput.value
-    );
+    try {
+        controller.addTodoToCurrentProject(
+            titleInput.value,
+            descriptionInput.value,
+            dueDateInput.value,
+            priorityInput.value
+        );
+    } catch (e) {
+        alert(e);
+        return;
+    }
 
     titleInput.value = "";
     descriptionInput.value = "";
