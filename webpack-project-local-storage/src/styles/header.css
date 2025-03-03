@@ -1,0 +1,20 @@
+
+header {
+    background-color: #303030;
+    color: #F4F4F4;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 43px;
+    padding-left: 30px;
+}
+
+header h1 {
+    padding: 10px 0px 10px 15px;
+}
+
+
+

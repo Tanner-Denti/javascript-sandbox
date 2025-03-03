@@ -1,0 +1,85 @@
+
+.todo-form {
+    margin: 30px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    width: 63%;
+}
+
+.left-form-fields {
+    display: grid;
+    grid-template-rows: 50px 104px;
+    gap: 2px;
+}
+
+.right-form-fields {
+    display: grid;
+    grid-template-rows: 50px 1fr 1fr;
+    gap: 2px;
+}
+
+.todo-form input,
+.todo-form textarea,
+.todo-form select,
+.todo-form button {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 0px;
+    border: none;
+    background-color: #D9D9D9;
+    font-family: var(--font-family);
+    font-optical-sizing: var(--font-optical-sizing);
+    font-weight: var(--font-weight);
+    font-style: var(--font-style);
+    font-size: 18px;
+    color: #404040;
+}
+
+.todo-form button {
+    background-color: #B4EBBC;
+}
+
+.todo-form input,
+.todo-form textarea,
+.todo-form select {
+    padding: 7px;
+}
+
+.todo-form input:focus,
+.todo-form textarea:focus,
+.todo-form select:focus,
+.todo-form button:focus {
+    outline: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+.todo-form select:hover,
+.todo-form button:hover {
+    cursor: pointer;
+}
+
+input[type="date"] {
+    cursor: default;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+::placeholder {
+    color: #404040;
+    opacity: 1;
+}
+
+.todo-form input:focus::placeholder,
+.todo-form textarea:focus::placeholder {
+    opacity: 0;
+}
+
+
+
+
+
+
