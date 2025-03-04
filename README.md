@@ -13,8 +13,10 @@ all intentional for the sake of my own learning.
 
 Below are some of the practice projects that are functional enough to demonstrate.
 
-Factory pattern and module pattern:
+Factory pattern and module pattern:  
 [tictactoe](https://tanner-denti.github.io/javascript-sandbox/factory-module-patterns/)
 
-Webpack, pub-sub pattern, and client side local storage:
-[todolist](https://tanner-denti.github.io/javascript-sandbox/)
+Webpack, pub-sub pattern, and client side local storage:  
+[todolist](https://tanner-denti.github.io/javascript-sandbox/webpack-project-local-storage/dist/)
+Notes:
+- Webpack prod dist isn't on seperate branch only because of the way I decided to structure this parent repo.
