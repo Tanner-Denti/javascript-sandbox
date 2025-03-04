@@ -43,6 +43,15 @@ export const todoFactory = function(title, description, dueDate, priority) {
         _priority = priority;
     }
 
+    function toJSON() {
+        return {
+            title: _title,
+            description: _description,
+            dueDate: _dueDate,
+            priority: _priority
+        };
+    }
+
     return {
         getTitle,
         setTitle,
@@ -52,5 +61,6 @@ export const todoFactory = function(title, description, dueDate, priority) {
         setDueDate,
         getPriority,
         setPriority,
+        toJSON
     };
 };

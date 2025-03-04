@@ -32,6 +32,21 @@ export const projectFactory = function(name) {
     function removeTodo(title) { 
         if (title in _todos) {
             delete _todos[title];
+            return true;
+        }
+        return false;
+    }
+
+    function toJSON() {
+        const _todosJSON = {};
+
+        Object.keys(_todos).forEach(title => {
+            _todosJSON[title] = _todos[title].toJSON();
+        });
+
+        return {
+            name: _name,
+            todos: _todosJSON
         }
     }
 
@@ -41,5 +56,23 @@ export const projectFactory = function(name) {
         getTodos,
         createTodo,
         removeTodo,
+        toJSON
     };
 };
+
+export function createProjectFromJSON(data) {
+    const project = projectFactory(data.name);
+    
+    if (data.todos) {
+        Object.values(data.todos).forEach(todoData => {
+            project.createTodo(
+                todoData.title,
+                todoData.description,
+                todoData.dueDate,
+                todoData.priority
+            );
+        });
+    }
+    
+    return project;
+}
