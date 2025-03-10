@@ -11,18 +11,18 @@ Some of this code is over-engineered. Some of these apps use patterns that are
 unessesary, and in many of these projects, I am re-inventing the wheel. This is
 all intentional for the sake of my own learning.
 
-Below are some of the practice projects that are functional enough to demonstrate.
+Below are some of the practice projects that are functional enough to demo.
 
 Webpack, pub-sub pattern, and client side local storage:  
 [todolist](https://tanner-denti.github.io/javascript-sandbox/webpack-project-local-storage/dist/)  
 
-Factory pattern and module pattern:  
+Factory pattern and module pattern:   
 [tictactoe](https://tanner-denti.github.io/javascript-sandbox/factory-module-patterns/)  
 
-Async Await Practice:
+Async Await Practice:  
 [gif-retriever](https://tanner-denti.github.io/javascript-sandbox/api-request-practice/)  
 
-Promise practice:
+Promise practice:  
 [weather-app](https://tanner-denti.github.io/javascript-sandbox/promise-project/)  
 
 Notes:
