@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #87CEEB, #1E90FF);
+  color: #333;
+}
+
+.weather-card {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.weather-card:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  background-color: #4682B4;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.conditions {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.location {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.weather-data {
+  padding: 1.5rem;
+}
+
+.temperature-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.temperature {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.temp-unit {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.temperature-div::after {
+  content: "°F";
+  font-size: 1.5rem;
+  margin-left: 0.3rem;
+}
+
+.bar {
+  height: 1px;
+  background-color: #ddd;
+  margin: 1rem 0;
+}
+
+.data-list li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.data-list span {
+  font-weight: 600;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+}
+
+input {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+input::placeholder {
+  color: #aaa;
+}

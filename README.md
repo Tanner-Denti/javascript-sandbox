@@ -13,11 +13,17 @@ all intentional for the sake of my own learning.
 
 Below are some of the practice projects that are functional enough to demonstrate.
 
-Factory pattern and module pattern:  
-[tictactoe](https://tanner-denti.github.io/javascript-sandbox/factory-module-patterns/)
-
 Webpack, pub-sub pattern, and client side local storage:  
 [todolist](https://tanner-denti.github.io/javascript-sandbox/webpack-project-local-storage/dist/)  
+
+Factory pattern and module pattern:  
+[tictactoe](https://tanner-denti.github.io/javascript-sandbox/factory-module-patterns/)  
+
+Async Await Practice:
+[gif-retriever](https://tanner-denti.github.io/javascript-sandbox/api-request-practice/)  
+
+Promise practice:
+[weather-app](https://tanner-denti.github.io/javascript-sandbox/promise-project/)  
 
 Notes:
 - Webpack prod /dist directories aren't on seperate branches only because of the way I decided to structure this parent repo.  
